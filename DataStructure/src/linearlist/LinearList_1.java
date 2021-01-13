@@ -11,8 +11,10 @@ public class LinearList_1 {
 	public static void main(String[] args) {
 		String [] linearArray = {"Moon", "Kim", "Choi"};
 		printArray(linearArray);
+		
 		linearArray = addData(linearArray, "Park");
 		printArray(linearArray);
+		
 		linearArray = delData(linearArray);
 		printArray(linearArray);
 	}
@@ -50,7 +52,6 @@ public class LinearList_1 {
 	
 	public static String[] addData(String[] array, String data) {
 		System.out.println("[Add Data]");
-		
 		
 		String [] tmpArray = resizeArray(array, '+');
 		tmpArray[array.length] = data;
